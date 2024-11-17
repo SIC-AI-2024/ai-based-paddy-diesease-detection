@@ -1,7 +1,7 @@
 
 # Paddy Disease Detection Project
 
-This project aims to detect paddy diseases using a trained  models. The project is divided into three main components: **Model Training**, **Frontend**, and **Backend**.
+This project aims to detect paddy diseases using trained models. The project is divided into three main components: **Model Training**, **Frontend**, and **Backend**.
 
 ---
 
@@ -24,7 +24,7 @@ The model training process involves:
 
 ### Kaggle Notebook
 The complete training process can be viewed on Kaggle:  
-[🔗 Paddy Disease Detection Notebook](https://www.kaggle.com/code/itmaybehimmm/paddy-disease-detection)
+1. Resnet 50: [🔗 Paddy Disease Detection Notebook](https://www.kaggle.com/code/itmaybehimmm/paddy-disease-detection)
 
 ---
 

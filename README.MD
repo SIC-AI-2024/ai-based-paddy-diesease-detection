@@ -24,7 +24,7 @@ The model training process involves:
 
 ### Kaggle Notebook
 The complete training process can be viewed on Kaggle:  
-[🔗 Paddy Disease Detection Notebook](https://www.kaggle.com/code/itmaybehimmm/paddy-disease-detection)
+1. Resnet 50: [🔗 Paddy Disease Detection Notebook](https://www.kaggle.com/code/itmaybehimmm/paddy-disease-detection)
 
 ---
 

@@ -13,7 +13,8 @@ MEAN=[0.23887189, 0.5860071,  0.49763182]
 STD=[0.18352188, 0.22406353, 0.22234197]
 
 
-label_encoder_path = "./files/label_encoder.pkl"
+label_encoder_path = "./model-files/label_encoder.pkl"
+best_model_path = os.path.join('model-files','best_model.pth')   
 
 # Load the LabelEncoder object
 with open(label_encoder_path, "rb") as f:
@@ -23,7 +24,7 @@ with open(label_encoder_path, "rb") as f:
 label_mappings = {idx : label for idx, label in enumerate(label_encoder.classes_)}
 
 # Get the number of classes
-num_classes = 16225
+num_classes = len(label_encoder.classes_)
 
 
 device = torch.device( "cpu")
@@ -75,6 +76,5 @@ def create_model(dropout_rate=0.5):
     return model
 
 model = create_model()
-best_model_path = os.path.join('files','best_model.pth')   
 model.load_state_dict(torch.load(best_model_path, map_location=device))
 model.eval()  # Set the model to evaluation mode

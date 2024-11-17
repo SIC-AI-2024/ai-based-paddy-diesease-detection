@@ -1,4 +1,3 @@
-
 # Paddy Disease Detection Project
 
 This project aims to detect paddy diseases using trained models. The project is divided into three main components: **Model Training**, **Frontend**, and **Backend**.
@@ -8,22 +7,25 @@ This project aims to detect paddy diseases using trained models. The project is 
 ## Dataset Description
 
 The dataset, **Paddy Doctor Dataset**, consists of:
+
 - **13 Classes** of paddy diseases (e.g., bacterial leaf blight, brown spot, etc.).
 - **16,000+ RGB Images** collected and labeled for effective model training.
 
 [🔗 Paddy Doctor Dataset](https://paddydoc.github.io/)
-
 
 ---
 
 ## 1. Model Training
 
 The model training process involves:
+
 - **Dataset Generation:** Preparing and organizing data for model training and Creating metadata for efficient data handling and preprocessing.
 - **Training Notebook:** Kaggle notebooks for training models.
 
 ### Kaggle Notebook
-The complete training process can be viewed on Kaggle:  
+
+The complete training process can be viewed on Kaggle:
+
 1. Resnet 50: [🔗 Paddy Disease Detection Notebook](https://www.kaggle.com/code/itmaybehimmm/paddy-disease-detection)
 
 ---
@@ -33,6 +35,7 @@ The complete training process can be viewed on Kaggle:
 The frontend is built with **Next.js**. It serves as the user interface for interacting with the detection system.
 
 ### Steps to Run the Frontend:
+
 1. Navigate to the frontend folder:
    ```bash
    cd paddy-disease-frontend
@@ -41,11 +44,15 @@ The frontend is built with **Next.js**. It serves as the user interface for inte
    ```bash
    npm install
    ```
-3. Build the project:
+3. Make environment file:
+   ```bash
+   touch .env # See .env.sample
+   ```
+4. Build the project:
    ```bash
    npm run build
    ```
-4. Start the production server:
+5. Start the production server:
    ```bash
    npm run start
    ```
@@ -61,6 +68,7 @@ The frontend is built with **Next.js**. It serves as the user interface for inte
 The backend is built with **Flask** and handles the model inference and API requests.
 
 ### Steps to Run the Backend:
+
 1. Navigate to the backend folder:
    ```bash
    cd paddy-disease-backend

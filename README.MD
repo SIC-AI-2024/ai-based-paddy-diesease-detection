@@ -28,6 +28,8 @@ The complete training process can be viewed on Kaggle:
 
 1. Resnet 50: [🔗 Paddy Disease Detection Notebook](https://www.kaggle.com/code/itmaybehimmm/paddy-disease-detection)
 
+2. Resnet 18: [🔗 Paddy Disease Detection Notebook (Press edit to view notebook)](https://www.kaggle.com/code/itmaybehimmm/paddy-disease-detection-resnet-18)
+
 ---
 
 ## 2. Frontend
@@ -100,6 +102,7 @@ The backend is built with **Flask** and handles the model inference and API requ
 ├── model-training/
 │   ├── dataset-generation/
 |        ├── <Your Dataset Folder>
+|        ├── <Notebooks to adjust dataset for traning>
 │   └── kaggle-notebooks/
 ├── paddy-disease-frontend/
 │   ├── components/
